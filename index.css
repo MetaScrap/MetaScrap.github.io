@@ -18142,6 +18142,8 @@ input:focus {
 }
 
 .contact-info-icon i {
+    top: 4px;
+    position: relative;
     font-size: 30px;
     color: #fff
 }
@@ -19379,14 +19381,14 @@ a.blog-read-more {
     margin-top: 20px
 }
 
-.sidebar ul li a {
+.sidebar ul li button {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
     transition: all .4s ease-in-out
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li button:hover {
     color: #f55b14
 }
 
@@ -19880,7 +19882,7 @@ a.blog-read-more {
     width: 100%
 }
 
-.service-cat-widget li a {
+.service-cat-widget li button {
     display: inline-block;
     width: 100%;
     padding: 14px 30px;
