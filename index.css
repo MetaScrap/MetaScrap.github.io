@@ -16668,6 +16668,10 @@ input:focus {
     .main-menu ul li a {
         padding: 0;
     }
+
+    .d-lg-block {
+        display: block !important;
+    }
 }
 
 .apply-button {
@@ -20254,7 +20258,7 @@ footer .footer-overlay {
     color: #f55b14
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (any-pointer: fine) {
     .search-forum {
         left: -200px
     }
@@ -20313,7 +20317,7 @@ footer .footer-overlay {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (any-pointer: fine) {
     body {
         font-size: 15px;
         line-height: 24px
