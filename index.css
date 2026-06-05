@@ -16640,6 +16640,36 @@ input:focus {
     height: 110px;
 }
 
+@media (any-pointer: coarse) {
+    .sticky-menu .container,
+    .sticky-menu .container .row,
+    .sticky-menu .container .row .nav-menu,
+    .sticky-menu .container .row .nav-menu .menu,
+    .main-menu,
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+    }
+
+    .hd-sec.sticky-menu {
+        height: 150px;
+    }
+
+    .header-top {
+        top: 150px;
+    }
+
+    .main-menu {
+        text-align: left;
+    }
+
+    .main-menu ul li a {
+        padding: 0;
+    }
+}
+
 .apply-button {
     position: relative;
     z-index: 2;
