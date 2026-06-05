@@ -16614,11 +16614,11 @@ input:focus {
 }
 
 .hd-sec.sticky-menu {
+    top: 0;
     left: 0;
     right: 0;
-    top: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     box-shadow: 0 0 5px #00000040;
     background: #fff;
     -webkit-animation-duration: 1s;
@@ -16626,7 +16626,15 @@ input:focus {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-name: fadeInDown;
-    -webkit-animation-name: fadeInDown
+    -webkit-animation-name: fadeInDown;
+    transition: top 0.3s ease-in-out;
+    height: 110px;
+}
+
+.header-top {
+    position: sticky;
+    z-index: 998;
+    top: 110px
 }
 
 .apply-button {

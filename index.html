@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-  MetaScrap
-  https://metascrap.github.io/
-  Servicio de recolección de scrap para maquiladoras en México
-  - Hierro
-  - Acero
-  - Aluminio
-  - Cobre
-  - Bronce
-  - Plomo
-  - Zinc
-  - Chatarra electrónica
-  Horarios de atención: Lunes a Viernes de 8:00 a 15:00
-  Contacto: info@metascrap.com
-  Facturación por correo electrónico, pago contra entrega
-  Medios de pago: Transferencia bancaria, Efectivo
-  Metascrap se compromete a ofrecer un servicio eficiente, seguro y responsable, contribuyendo al reciclaje y la sostenibilidad ambiental. Contáctanos para más información o para solicitar una cotización.
-  -->
 <head>
     <meta charset="UTF-8">
-    <title>MetaScrap - Scrap Collection Services for Maquiladoras in Mexico</title>
-    <meta name="description" content="MetaScrap is a leading scrap collection service provider in Mexico, specializing in the efficient and responsible collection of various types of scrap materials. With a commitment to sustainability and environmental responsibility, we offer our services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. Our team of professionals is dedicated to providing top-notch service, ensuring that our clients receive the best value for their scrap materials while contributing to a greener future. Our services include the collection of iron, steel, aluminum, copper, bronze, lead, zinc, and electronic scrap. We operate from Monday to Friday, from 8:00 AM to 3:00 PM, providing flexible scheduling options to meet the needs of our clients. We also offer convenient payment methods, including bank transfers and cash payments upon delivery. At MetaScrap, we are committed to delivering efficient, secure, and responsible service that supports recycling efforts and promotes environmental sustainability. Contact us today for more information or to request a quote.">
+    <title>MetaScrapMX - Scrap Collection Services for Maquiladoras in Mexico</title>
+    <meta name="description" content="MetaScrapMX is a leading scrap collection service provider in Mexico, specializing in the efficient and responsible collection of various types of scrap materials. With a commitment to sustainability and environmental responsibility, we offer our services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. Our team of professionals is dedicated to providing top-notch service, ensuring that our clients receive the best value for their scrap materials while contributing to a greener future. Our services include the collection of iron, steel, aluminum, copper, bronze, lead, zinc, and electronic scrap. We operate from Monday to Friday, from 8:00 AM to 3:00 PM, providing flexible scheduling options to meet the needs of our clients. We also offer convenient payment methods, including bank transfers and cash payments upon delivery. At MetaScrapMX, we are committed to delivering efficient, secure, and responsible service that supports recycling efforts and promotes environmental sustainability. Contact us today for more information or to request a quote.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<script type="module" crossorigin="" src="./index.js"></script>-->
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="./index.js"></script>
+</head>
 <body>
     <div id="root">
         <div>
+            <div class="hd-sec sticky-menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo"><a href="/"><img src="/assets/logo/logo.png" alt="logo"></a></div>
+                        </div>
+                        <div class="col-lg-7 d-none d-lg-block nav-menu">
+                            <div class="menu">
+                                <nav id="main-menu" class="main-menu">
+                                    <ul>
+                                        <li><a class="" href="/">Home</a></li>
+                                        <li><a class="" href="/about">About</a></li>
+                                        <li><a class="" href="/service">Service</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block apply-button-area">
+                            <div class="apply-button">
+                              <a href="/contact"><i class="fa-solid fa-envelope"></i>Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="header-top">
                 <div class="container">
                     <div class="row">
@@ -58,38 +66,13 @@
                     </div>
                 </div>
             </div>
-            <div class="hd-sec sticky-menu">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-3 col-4">
-                            <div class="logo"><a href="/"><img src="/assets/logo/logo.png" alt="logo"></a></div>
-                        </div>
-                        <div class="col-lg-7 d-none d-lg-block nav-menu">
-                            <div class="menu">
-                                <nav id="main-menu" class="main-menu">
-                                    <ul>
-                                        <li><a class="" href="/">Home</a></li>
-                                        <li><a class="" href="/about">About</a></li>
-                                        <li><a class="" href="/service">Service</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-block apply-button-area">
-                            <div class="apply-button">
-                              <a href="/contact"><i class="fa-solid fa-envelope"></i>Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <section class="slider">
                 <div class="all-slide banner-slide">
                     <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                         <div class="swiper-wrapper"
                             style="transition-duration: 0ms; transform: translate3d(-708px, 0px, 0px);">
                             <div class="swiper-slide swiper-slide-next swiper-slide-prev"
-                                style="width: 100vw; margin-right: 50px;" data-swiper-slide-index="0">
+                                style="width: 100vw; margin-right: 0;" data-swiper-slide-index="0">
                                 <div class="single-slide"
                                     style="background-image: url(&quot;/assets/banner/slide1.jpg&quot;);">
                                     <div class="slider-overlay"></div>
@@ -115,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1"
-                                style="width: 100vw; margin-right: 50px;">
+                                style="width: 100vw; margin-right: 0;">
                                 <div class="single-slide"
                                     style="background-image: url(&quot;/assets/banner/slide2.jpg&quot;);">
                                     <div class="slider-overlay"></div>
@@ -173,10 +156,10 @@
                                         <div class="about-desc">
                                             <h1>About Our Company</h1>
                                             <p>
-                                              Metascrap is a leading scrap collection service provider in Mexico, specializing in the efficient and responsible collection of various types of scrap materials. With a commitment to sustainability and environmental responsibility, we offer our services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. Our team of professionals is dedicated to providing top-notch service, ensuring that our clients receive the best value for their scrap materials while contributing to a greener future.
+                                              MetaScrapMX is a leading scrap collection service provider in Mexico, specializing in the efficient and responsible collection of various types of scrap materials. With a commitment to sustainability and environmental responsibility, we offer our services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. Our team of professionals is dedicated to providing top-notch service, ensuring that our clients receive the best value for their scrap materials while contributing to a greener future.
                                             </p>
                                             <p>
-                                              Our services include the collection of iron, steel, aluminum, copper, bronze, lead, zinc, and electronic scrap. We operate from Monday to Friday, from 8:00 AM to 3:00 PM, providing flexible scheduling options to meet the needs of our clients. We also offer convenient payment methods, including bank transfers and cash payments upon delivery. At Metascrap, we are committed to delivering efficient, secure, and responsible service that supports recycling efforts and promotes environmental sustainability. Contact us today for more information or to request a quote.
+                                              Our services include the collection of iron, steel, aluminum, copper, bronze, lead, zinc, and electronic scrap. We operate from Monday to Friday, from 8:00 AM to 3:00 PM, providing flexible scheduling options to meet the needs of our clients. We also offer convenient payment methods, including bank transfers and cash payments upon delivery. At MetaScrapMX, we are committed to delivering efficient, secure, and responsible service that supports recycling efforts and promotes environmental sustainability. Contact us today for more information or to request a quote.
                                             </p>
                                             <a href="/about">Read More<i class="fa-solid fa-angles-right"></i></a>
                                         </div>
@@ -407,7 +390,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="footer-widget-one">
                                     <p>
-                                      With a commitment to sustainability and environmental responsibility, MetaScrap offers efficient and responsible scrap collection services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. 
+                                      With a commitment to sustainability and environmental responsibility, MetaScrapMX offers efficient and responsible scrap collection services to maquiladoras across Juarez, Chihuahua, and the surrounding areas. 
                                     </p>
                                     <a class="footer-logo" href="/">
                                       <img src="/assets/logo/ft-logo.png" alt="footerLogo">
