@@ -16220,7 +16220,7 @@ input:focus {
 }
 
 .pt-100 {
-    padding-top: 100px
+    padding-top: 50px
 }
 
 .pb-100 {
@@ -16293,7 +16293,7 @@ input:focus {
     background: #0f1934;
     position: sticky;
     z-index: 998;
-    top: 110px;
+    top: 50px;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -16422,7 +16422,7 @@ input:focus {
 
 .main-menu ul li a {
     display: block;
-    padding: 40px 12px;
+    padding: 0;
     text-decoration: none;
     text-transform: capitalize;
     transition: all .4s ease;
@@ -16637,7 +16637,7 @@ input:focus {
     animation-name: fadeInDown;
     -webkit-animation-name: fadeInDown;
     transition: top 0.3s ease-in-out;
-    height: 110px;
+    height: 50px;
 }
 
 @media (any-pointer: coarse) {
@@ -16663,10 +16663,6 @@ input:focus {
 
     .main-menu {
         text-align: left;
-    }
-
-    .main-menu ul li a {
-        padding: 0;
     }
 
     .d-lg-block {
@@ -20263,10 +20259,6 @@ footer .footer-overlay {
         left: -200px
     }
 
-    .main-menu ul li a {
-        padding: 40px 7px
-    }
-
     .slider-text {
         padding: 40px 30px;
         width: 991px
@@ -20557,10 +20549,6 @@ footer .footer-overlay {
 
     .instructor-member:after {
         height: 38%
-    }
-
-    .main-menu ul li a {
-        padding: 25px 7px
     }
 
     .company-ceo-thumb img {
