@@ -1114,8 +1114,7 @@ hr {
     margin: 1rem 0;
     color: inherit;
     border: 0;
-    border-top: var(--bs-border-width) solid;
-    opacity: .25
+    border-top: 2px solid #f55b14
 }
 
 .h1,
@@ -16294,7 +16293,14 @@ input:focus {
     background: #0f1934;
     position: sticky;
     z-index: 998;
-    top: 110px
+    top: 110px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    transition: top 0.3s ease-in;
 }
 
 .header-left {
@@ -17044,18 +17050,18 @@ input:focus {
     border-radius: 0
 }
 
-.about-tab li.nav-item a.nav-link:hover,
-.about-tab li.nav-item a.nav-link.active {
+.about-tab li.nav-item button.nav-link:hover,
+.about-tab li.nav-item button.nav-link.active {
     background: #f55b14 none repeat scroll 0 0;
     color: #fff;
     border-color: #f55b14
 }
 
-.about-tab li.nav-item a.nav-link.active {
+.about-tab li.nav-item button.nav-link.active {
     text-decoration: underline
 }
 
-.about-tab li a {
+.about-tab li button {
     font-weight: 400;
     display: inline-block;
     text-align: center;
@@ -17083,7 +17089,7 @@ input:focus {
     position: relative;
     margin-top: -220px;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     background: #fff
 }
 

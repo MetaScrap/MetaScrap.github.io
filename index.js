@@ -63,9 +63,48 @@ function initContactForm() {
   });
 }
 
+function initAboutTabs() {
+  const tabList = document.querySelector('#pills-tab');
+  const tabPanes = document.querySelectorAll('#pills-tabContent .tab-pane');
+
+  if (!tabList || tabPanes.length === 0) return;
+
+  const tabs = tabList.querySelectorAll('.nav-link');
+
+  function activateTab(targetId) {
+    tabs.forEach((tab) => {
+      const isActive = tab.getAttribute('data-bs-target') === `#${targetId}`;
+      tab.classList.toggle('active', isActive);
+      tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    tabPanes.forEach((pane) => {
+      const isActive = pane.id === targetId;
+      pane.classList.toggle('show', isActive);
+      pane.classList.toggle('active', isActive);
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetId = tab.getAttribute('data-bs-target')?.replace('#', '');
+
+      if (targetId) {
+        activateTab(targetId);
+      }
+    });
+  });
+
+  const activeTab = tabList.querySelector('.nav-link.active');
+  const initialTarget = activeTab?.getAttribute('data-bs-target')?.replace('#', '') || tabPanes[0].id;
+  activateTab(initialTarget);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initSmartNavbar();
   initContactForm();
+  initAboutTabs();
   const config = {
     autoplay: true,
     autoplayInterval: 8000,
