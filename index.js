@@ -19,7 +19,6 @@ function initSmartNavbar() {
   }, false);
 }
 
-// Initialize Contact Form with mailto
 function initContactForm() {
   const form = document.querySelector('form');
   if (!form) return;
@@ -30,7 +29,6 @@ function initContactForm() {
     const submitBtn = document.querySelector('.submit-btn');
     const originalText = submitBtn ? submitBtn.textContent : '';
     const name = form.querySelector('input[name="name"]').value.trim();
-    const email = form.querySelector('input[name="email"]').value.trim();
     const phone = form.querySelector('input[name="phone"]').value.trim();
     const subject = form.querySelector('input[name="subject"]').value.trim();
     const message = form.querySelector('textarea[name="message"]').value.trim();
@@ -39,7 +37,6 @@ function initContactForm() {
     const mailBody = [
       `Name: ${name}`,
       `Phone: ${phone}`,
-      `Subject: ${subject}`,
       '',
       'Message:',
       message
