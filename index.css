@@ -9226,7 +9226,7 @@ fieldset:disabled .btn {
 }
 
 .d-none {
-    display: none !important
+    display: block !important
 }
 
 .shadow {
@@ -17099,8 +17099,9 @@ input:focus {
     text-transform: capitalize;
     border: 1px solid #0f1934;
     font-size: 18px;
-    padding: 10px 30px;
-    background: #0f1934
+    padding: 10px 20px;
+    background: #0f1934;
+    margin-top: 10px;
 }
 
 .about-desc a {
