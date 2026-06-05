@@ -19,8 +19,53 @@ function initSmartNavbar() {
   }, false);
 }
 
+// Initialize Contact Form with mailto
+function initContactForm() {
+  const form = document.querySelector('form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const submitBtn = document.querySelector('.submit-btn');
+    const originalText = submitBtn ? submitBtn.textContent : '';
+    const name = form.querySelector('input[name="name"]').value.trim();
+    const email = form.querySelector('input[name="email"]').value.trim();
+    const phone = form.querySelector('input[name="phone"]').value.trim();
+    const subject = form.querySelector('input[name="subject"]').value.trim();
+    const message = form.querySelector('textarea[name="message"]').value.trim();
+
+    const mailSubject = subject || `Contact request from ${name}`;
+    const mailBody = [
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      `Subject: ${subject}`,
+      '',
+      'Message:',
+      message
+    ].join('\r\n');
+
+    const mailtoLink = `mailto:adnksharp@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Abriendo correo...';
+    }
+
+    window.location.href = mailtoLink;
+
+    if (submitBtn) {
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 1200);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initSmartNavbar();
+  initContactForm();
   const config = {
     autoplay: true,
     autoplayInterval: 8000,

@@ -16291,7 +16291,10 @@ input:focus {
 }
 
 .header-top {
-    background: #0f1934
+    background: #0f1934;
+    position: sticky;
+    z-index: 998;
+    top: 110px
 }
 
 .header-left {
@@ -16629,12 +16632,6 @@ input:focus {
     -webkit-animation-name: fadeInDown;
     transition: top 0.3s ease-in-out;
     height: 110px;
-}
-
-.header-top {
-    position: sticky;
-    z-index: 998;
-    top: 110px
 }
 
 .apply-button {
